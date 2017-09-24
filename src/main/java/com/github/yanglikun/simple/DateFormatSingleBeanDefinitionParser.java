@@ -7,7 +7,7 @@ import org.w3c.dom.Element;
 
 import java.text.SimpleDateFormat;
 
-public class SimpleDateFormatBeanDefinitionParser extends AbstractSingleBeanDefinitionParser {
+public class DateFormatSingleBeanDefinitionParser extends AbstractSingleBeanDefinitionParser {
 
     @Override
     protected Class<?> getBeanClass(Element element) {

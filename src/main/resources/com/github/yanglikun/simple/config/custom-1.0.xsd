@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
-           targetNamespace="https://github.com/yanglikun/schema/simple">
+           targetNamespace="https://github.com/yanglikun/schema/custom">
     <xsd:element name="dateformat">
         <xsd:complexType>
             <xsd:attribute name="id" use="required" type="xsd:NCName"/>

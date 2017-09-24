@@ -1,12 +1,20 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:ylk="https://github.com/yanglikun/schema/simple"
+       xmlns:ylk="https://github.com/yanglikun/schema/custom"
        xsi:schemaLocation="
        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
-       https://github.com/yanglikun/schema/simple https://github.com/yanglikun/schema/simple/simple-datetime.xsd">
+       https://github.com/yanglikun/schema/custom https://github.com/yanglikun/schema/custom/custom-1.0.xsd">
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:spring.properties</value>
+            </list>
+        </property>
+    </bean>
 
 
-    <ylk:dateformat id="ylkDateFormat" pattern="yyyy-MM-dd HH:mm:ss"/>
+    <ylk:dateformat id="ylkDateFormat" pattern="${date.format}"/>
 
 
 </beans>

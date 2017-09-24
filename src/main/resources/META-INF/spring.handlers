@@ -1,1 +1,1 @@
-https\://github.com/yanglikun/schema/simple=com.github.yanglikun.simple.SimpleNamespaceHandler
+https\://github.com/yanglikun/schema/custom=com.github.yanglikun.simple.CustomNamespaceHandler
