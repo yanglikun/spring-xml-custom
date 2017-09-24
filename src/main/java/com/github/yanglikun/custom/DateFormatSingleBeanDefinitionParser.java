@@ -1,4 +1,4 @@
-package com.github.yanglikun.simple;
+package com.github.yanglikun.custom;
 
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser;
