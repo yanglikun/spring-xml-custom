@@ -7,6 +7,9 @@ import org.w3c.dom.Element;
 
 import java.text.SimpleDateFormat;
 
+/**
+ * 适用于通过构造函数构建bean
+ */
 public class DateFormatSingleBeanDefinitionParser extends AbstractSingleBeanDefinitionParser {
 
     @Override

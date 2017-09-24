@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
-           targetNamespace="https://github.com/yanglikun/schema/custom">
+<xsd:schema
+        xmlns="https://github.com/yanglikun/schema/custom"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified"
+        attributeFormDefault="unqualified"
+        targetNamespace="https://github.com/yanglikun/schema/custom">
     <xsd:element name="dateformat">
         <xsd:complexType>
             <xsd:attribute name="id" use="required" type="xsd:NCName"/>
             <xsd:attribute name="pattern" use="required"/>
-            <xsd:attribute name="lenient"  type="xsd:boolean"/>
+            <xsd:attribute name="lenient" type="xsd:boolean"/>
         </xsd:complexType>
     </xsd:element>
+    <xsd:element name="person">
+        <xsd:complexType>
+            <xsd:attribute name="id" use="required" type="xsd:NCName"/>
+            <xsd:attribute name="userName" type="xsd:NCName"/>
+            <xsd:attribute name="age" type="xsd:integer"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="component">
+        <xsd:complexType>
+            <xsd:choice minOccurs="0" maxOccurs="unbounded">
+                <xsd:element ref="component"/>
+            </xsd:choice>
+            <xsd:attribute name="id" type="xsd:ID"/>
+            <xsd:attribute name="name" use="required" type="xsd:string"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:attribute name="cache-name" type="xsd:string"/>
+
 </xsd:schema>

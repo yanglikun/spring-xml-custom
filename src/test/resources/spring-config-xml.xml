@@ -16,5 +16,19 @@
 
     <ylk:dateformat id="ylkDateFormat" pattern="${date.format}"/>
 
+    <ylk:person id="personId" userName="yanlgikun" age="10"/>
+
+    <ylk:component id="customComponent" name="a">
+        <ylk:component name="a-1">
+            <ylk:component name="a-1-1"/>
+            <ylk:component name="a-1-2"/>
+        </ylk:component>
+        <ylk:component name="a-2"/>
+    </ylk:component>
+
+    <bean id="customAttr" class="java.lang.String" ylk:cache-name="cacheName">
+        <constructor-arg value="abcd"/>
+    </bean>
+
 
 </beans>
